@@ -11,6 +11,7 @@ export const Main = () => (
 		<Container
 			maxWidth="xxl"
 			sx={{
+				marginTop: '65px',
 				'@media (max-width:680px)': { padding: 0 },
 			}}
 		>
