@@ -15,7 +15,7 @@ export const Main = () => (
 				'@media (max-width:680px)': { padding: 0 },
 			}}
 		>
-			<BlogsContainer elevation={0} square={true}>
+			<BlogsContainer elevation={24} square={true}>
 				<BlogListItem />
 				<BlogListItem />
 				<BlogListItem />
