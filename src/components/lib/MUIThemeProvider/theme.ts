@@ -38,6 +38,12 @@ theme.typography.h2 = {
   lineHeight: 1.2,
   wordWrap: 'break-word',
   textTransform: 'uppercase',
+  [theme.breakpoints.up('sm')]: {
+    fontSize: '4.2rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '4.8rem',
+  }
 }
 
 theme.typography.body1 = {

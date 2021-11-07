@@ -3,3 +3,8 @@
 html {
 	font-size: 10px;
 }
+
+body,
+#root {
+	background: #f8f8f8;
+}

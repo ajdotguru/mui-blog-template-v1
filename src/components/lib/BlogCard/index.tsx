@@ -21,6 +21,15 @@ export const BlogCard = styled(Card)(({ theme }) => ({
 			height: '40px',
 			borderRadius: 0,
 			marginBottom: '1.5rem',
+			[theme.breakpoints.up('lg')]: {
+				maxWidth: '145px',
+			},
+		},
+		'@media (min-width:620px)': {
+			flexDirection: 'row',
+			'& .MuiButton-contained': {
+				marginRight: '1.5rem',
+			},
 		},
 	},
 	'&:after': {

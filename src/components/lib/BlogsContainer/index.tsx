@@ -8,5 +8,14 @@ export const BlogsContainer = styled(Paper)(({ theme }) => ({
 	},
 	[theme.breakpoints.up('md')]: {
 		padding: '10rem 14% 11rem',
+		boxShadow: '0 30px 50px 0 rgb(1 1 1 / 15%)',
+		top: '-99px',
+		position: 'relative',
+	},
+	[theme.breakpoints.up('lg')]: {
+		padding: '10rem 14% 11rem',
+	},
+	[theme.breakpoints.up('xl')]: {
+		padding: '16rem 11% 15rem',
 	},
 }));
