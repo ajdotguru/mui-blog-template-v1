@@ -1,2 +1,3 @@
 export * from './BlogsContainer';
-export * from './MUIThemeProvider'
+export * from './MUIThemeProvider';
+export * from './BlogCard';

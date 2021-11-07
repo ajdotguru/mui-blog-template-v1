@@ -25,7 +25,35 @@ let theme = createTheme({
   },
   typography: {
     htmlFontSize: 10,
-    fontSize: 10
+    fontSize: 10,
+    fontFamily: "'Domine', serif"
+  }
+})
+
+theme.typography.h2 = {
+  fontFamily: "'Josefin Sans', sans-serif",
+  fontSize: '2.7rem',
+  color: '#333333',
+  fontWeight: 600,
+  lineHeight: 1.2,
+  wordWrap: 'break-word',
+  textTransform: 'uppercase',
+}
+
+theme.typography.body1 = {
+  fontFamily: "'Domine', serif",
+  fontSize: '1.6rem',
+  lineHeight: 1.88,
+}
+
+theme = createTheme(theme, {
+  components: {
+    MuiButton: {
+      defaultProps: {
+        disableRipple: true,
+        disableElevation: true,
+      }
+    }
   }
 })
 
