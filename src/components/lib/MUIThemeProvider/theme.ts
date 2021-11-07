@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import { red } from '@mui/material/colors';
 
 declare module '@mui/material/styles' {
   interface BreakpointOverrides {
@@ -11,7 +12,8 @@ let theme = createTheme({
     mode: 'light',
     primary: {
       // main: '#039be5'
-      main: '#c62641'
+      // main: '#c62641'
+      main: red[800]
     }
   },
   breakpoints: {
@@ -28,12 +30,12 @@ let theme = createTheme({
   typography: {
     htmlFontSize: 10,
     fontSize: 10,
-    fontFamily: "'Domine', serif"
+    fontFamily: "'Open Sans', sans-serif"
   }
 })
 
 theme.typography.h2 = {
-  fontFamily: "'Josefin Sans', sans-serif",
+  fontFamily: "'Playfair Display', serif",
   fontSize: '2.7rem',
   color: '#333333',
   fontWeight: 600,
@@ -49,21 +51,21 @@ theme.typography.h2 = {
 }
 
 theme.typography.body1 = {
-  fontFamily: "'Domine', serif",
+  fontFamily: "'Open Sans', sans-serif",
   fontSize: '1.6rem',
   lineHeight: 1.88,
 }
 
-theme = createTheme(theme, {
+/* theme = createTheme(theme, {
   components: {
     MuiButton: {
       defaultProps: {
-        disableRipple: true,
-        disableElevation: true,
+        disableRipple: false,
+        disableElevation: false,
       }
     }
   }
-})
+}) */
 
 export {
   theme

@@ -5,7 +5,7 @@ export const BlogTitleLetter = () => (
 		sx={{
 			position: 'absolute',
 			fontSize: '26rem',
-			fontFamily: "'Josefin Sans', sans-serif",
+			fontFamily: "'Playfair Display', serif",
 			fontWeight: 600,
 			left: '-7rem',
 			zIndex: 1,
