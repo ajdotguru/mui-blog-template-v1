@@ -1,12 +1,22 @@
-import { Button, CardActions, CardContent, Typography } from '@mui/material';
-import { BlogCard } from 'components/lib';
+import { Button, CardActions, CardContent, CardHeader, Typography } from '@mui/material';
+import { BlogCard, BlogTitleLetter } from 'components/lib';
 
 export const BlogListItem = () => (
 	<BlogCard square={true} elevation={0}>
-		<Typography variant="h2" gutterBottom={true}>
-			A beautiful blog with no images required
-		</Typography>
-		<Typography variant="subtitle1">By Test User / In Category / 2 Min Read</Typography>
+		<CardHeader
+			title={
+				<>
+					<Typography variant="h2" gutterBottom={true}>
+						A beautiful blog with no images required
+					</Typography>
+					<BlogTitleLetter />
+				</>
+			}
+			subheader={
+				<Typography variant="subtitle1">By Test User / In Category / 2 Min Read</Typography>
+			}
+		/>
+
 		<CardContent>
 			<Typography>
 				Typology is a WordPress theme created for bloggers that just want to write, without the

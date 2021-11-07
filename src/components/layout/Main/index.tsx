@@ -18,6 +18,9 @@ export const Main = () => (
 			<BlogsContainer elevation={0} square={true}>
 				<BlogListItem />
 				<BlogListItem />
+				<BlogListItem />
+				<BlogListItem />
+				<BlogListItem />
 			</BlogsContainer>
 		</Container>
 	</main>

@@ -5,6 +5,15 @@ export const BlogCard = styled(Card)(({ theme }) => ({
 	marginBottom: '3rem',
 	paddingBottom: '4rem',
 	position: 'relative',
+	overflow: 'unset',
+	'& .MuiCardHeader-root': {
+		padding: 0,
+
+		'& .MuiCardHeader-content': {
+			position: 'relative',
+			zIndex: 2,
+		},
+	},
 	'& .MuiTypography-subtitle1': {
 		color: '#888888',
 		fontSize: '1.3rem',

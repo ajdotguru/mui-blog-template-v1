@@ -9,7 +9,8 @@ declare module '@mui/material/styles' {
 let theme = createTheme({
   palette: {
     primary: {
-      main: '#039be5'
+      // main: '#039be5'
+      main: '#c62641'
     }
   },
   breakpoints: {
